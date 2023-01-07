@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import HeroSection from "./components/HeroSection";
 
 const About = () => {
-  return (
-    <div>
-        About
-    </div>
-  )
-}
+    const data = {
+      name: "FABAU Ecommerce ",
+    };
+  return <HeroSection myData={data} />;
+};
 
-export default About
+export default About;
