@@ -38,6 +38,24 @@ const ProductReducer = (state, action) => {
         isLoading: false,
         isError: true,
       };
+      case "SET_SINGLE_LOADING":
+        return {
+          ...state,
+          isSingleLoading: true,
+        };
+      case "SET_SINGLE_PRODUCT":
+        return {
+          ...state,
+          isSingleLoading: false,
+          singleProdcut: action.payload,
+        };
+
+      case "SET-SINGLE_ERROR":
+        return {
+          ...state,
+          isLoading: false,
+          isError: true,
+        }
     default:
       return state;
   }
