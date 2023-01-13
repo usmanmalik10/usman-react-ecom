@@ -7,6 +7,7 @@ const MyImage = ({ imgs = [{ url: "" }] }) => {
 //Malik
 //Programmer
 //developer
+//software 
 
   return (
     <Wrapper>
