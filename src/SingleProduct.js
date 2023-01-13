@@ -63,6 +63,7 @@ const SingleProduct = () => {
               Deal of the Day: <FormatePrice price={price} />
             </p>
             <p>{description}</p>
+            {/* <p>{category} </p> */}
             <div className="product-data-warranty">
               <div className="product-warranty-data">
                 <TbTruckDelivery className="warranty-icon" />
