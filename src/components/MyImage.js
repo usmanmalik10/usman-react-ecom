@@ -5,6 +5,7 @@ const MyImage = ({ imgs = [{ url: "" }] }) => {
   const [mainImage, setMainImage] = useState(imgs[0]);
 // Usman
 //Malik
+//Programmer
   return (
     <Wrapper>
       <div className="grid grid-four-column">
