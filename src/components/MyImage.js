@@ -3,11 +3,7 @@ import styled from "styled-components";
 
 const MyImage = ({ imgs = [{ url: "" }] }) => {
   const [mainImage, setMainImage] = useState(imgs[0]);
-// Usman
-//Malik
-//Programmer
-//developer
-//software 
+//engineer 
 
   return (
     <Wrapper>
