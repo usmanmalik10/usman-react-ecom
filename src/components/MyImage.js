@@ -6,6 +6,7 @@ const MyImage = ({ imgs = [{ url: "" }] }) => {
 // Usman
 //Malik
 //Programmer
+//developer
   return (
     <Wrapper>
       <div className="grid grid-four-column">
