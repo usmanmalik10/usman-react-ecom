@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const AddToCart = ({product}) => {
+const AddToCart = ({ product }) => {
   const { id, colors, stock } = product;
+
+  
 
   return (
     <Wrapper>
@@ -10,7 +12,14 @@ const AddToCart = ({product}) => {
         <p>
           Colors:
           {colors.map((curColor, index) => {
-            return (<button key={index}> {curColor} </button>);
+            return (
+              <button
+                key={index}
+                style={{ backgroundColor: curColor }}
+                className="btnStyle active">
+                {curColor}
+              </button>
+            );
           })}
         </p>
       </div>
