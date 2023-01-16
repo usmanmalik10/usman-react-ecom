@@ -17,8 +17,8 @@ const AddToCart = ({ product }) => {
               <button
                 key={index}
                 style={{ backgroundColor: curColor }}
-                className={color === curColor ? "btnStyle active" : "btnStyle"}>
-               
+                className={color === curColor ? "btnStyle active" : "btnStyle"}
+               onClick={() => setColor(curColor)}>
                 {color === curColor ? <FaCheck /> : null }
               </button>
             );
