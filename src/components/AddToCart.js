@@ -1,10 +1,11 @@
-import React from "react";
+import { useState } from "react";
 import styled from "styled-components";
+import { FaCheck } from "react-icons/fa";
+
 
 const AddToCart = ({ product }) => {
   const { id, colors, stock } = product;
-
-  
+  const [color, setColor] = useState(colors[0]);
 
   return (
     <Wrapper>
@@ -16,8 +17,9 @@ const AddToCart = ({ product }) => {
               <button
                 key={index}
                 style={{ backgroundColor: curColor }}
-                className="btnStyle active">
-                {curColor}
+                className={color === curColor ? "btnStyle active" : "btnStyle"}>
+               
+                {color === curColor ? <FaCheck /> : null }
               </button>
             );
           })}
