@@ -1,9 +1,8 @@
-import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import { AiOutlineStar } from "react-icons/ai";
-import styled from "styled-components";
+import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
+import { AiOutlineStar } from 'react-icons/ai';
+import styled from 'styled-components';
 
-
-// Star Rating 
+// Star Rating
 
 const Star = ({ stars, reviews }) => {
   const ratingStar = Array.from({ length: 5 }, (elem, index) => {
@@ -22,12 +21,12 @@ const Star = ({ stars, reviews }) => {
   });
   return (
     <Wrapper>
-        <div className="icon-style">
-            {ratingStar}
-            <p>({reviews} customer reviews)</p>
-        </div>
+      <div className="icon-style">
+        {ratingStar}
+        <p>({reviews} customer reviews)</p>
+      </div>
     </Wrapper>
-  )
+  );
 };
 
 const Wrapper = styled.section`
