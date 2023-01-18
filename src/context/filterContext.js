@@ -15,7 +15,7 @@ export const FilterContextProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  //   to set the frid view
+  //   to set the grid view
   const setGridView = () => {
     return dispatch({ type: 'SET_GRIDVIEW' });
   };
