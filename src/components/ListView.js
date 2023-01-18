@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import FormatPrice from '../Helpers/FormatPrice';
+import FormatePrice from '../Helpers/FormatePrice';
+
 import { Button } from '../styles/Button';
 
 const ListView = ({ products }) => {
@@ -18,7 +19,7 @@ const ListView = ({ products }) => {
               <div className="card-data">
                 <h3>{name}</h3>
                 <p>
-                  <FormatPrice price={price} />
+                  <FormatePrice price={price} />
                 </p>
                 <p>{description.slice(0, 90)}...</p>
 
