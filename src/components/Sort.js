@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const Sort = () => {
   return (
     <Wrapper className="sort-section">
-      <div className="sorting-list--grid"></div>
+      <div className="sorting-list--grid">
+        <div></div>
+      </div>
     </Wrapper>
   );
 };
