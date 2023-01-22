@@ -29,7 +29,7 @@ const Sort = () => {
         <p>{`${filter_products.length} Product Available`}</p>
       </div>
 
-      {/* 3rd column  */}
+      {/* Third column  */}
       <div className="sort-selection">
         <form action="#">
           <label htmlFor="sort"></label>
