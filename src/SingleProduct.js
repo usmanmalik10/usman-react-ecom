@@ -1,19 +1,17 @@
-import { useEffect } from "react";
-import styled from "styled-components";
-import { useParams } from "react-router-dom";
-import { useProductContext } from "./context/productcontext";
-import PageNavigation from "./components/PageNavigation";
-import MyImage from "./components/MyImage";
-import { Container } from "./styles/Container";
-import FormatePrice from "./Helpers/FormatePrice";
-import { MdSecurity } from "react-icons/md";
-import { TbTruckDelivery, TbReplace } from "react-icons/tb";
-import Star from "./components/Star";
-import AddToCart from "./components/AddToCart";
+import { useEffect } from 'react';
+import styled from 'styled-components';
+import { useParams } from 'react-router-dom';
+import { useProductContext } from './context/productcontext';
+import PageNavigation from './components/PageNavigation';
+import MyImage from './components/MyImage';
+import { Container } from './styles/Container';
+import FormatePrice from './Helpers/FormatePrice';
+import { MdSecurity } from 'react-icons/md';
+import { TbTruckDelivery, TbReplace } from 'react-icons/tb';
+import Star from './components/Star';
+import AddToCart from './components/AddToCart';
 
-
-
-const API = "https://api.pujakaitem.com/api/products";
+const API = 'https://api.pujakaitem.com/api/products';
 
 const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =
@@ -55,7 +53,7 @@ const SingleProduct = () => {
           {/* product dAta  */}
           <div className="product-data">
             <h2>{name}</h2>
-            <Star stars={stars} reviews={reviews} />  
+            <Star stars={stars} reviews={reviews} />
             <p>{reviews} reviews</p>
             <p className="product-data-price">
               MRP:
@@ -93,7 +91,7 @@ const SingleProduct = () => {
             <div className="product-data-info">
               <p>
                 Available:
-                <span> {stock > 0 ? "In Stock" : "Not Available"}</span>
+                <span> {stock > 0 ? 'In Stock' : 'Not Available'}</span>
               </p>
               <p>
                 ID : <span> {id} </span>
@@ -102,10 +100,8 @@ const SingleProduct = () => {
                 Brand :<span> {company} </span>
               </p>
             </div>
-            <hr/>
-            {
-              stock > 0 && <AddToCart product={singleProduct} />
-            }
+            <hr />
+            {stock > 0 && <AddToCart product={singleProduct} />}
           </div>
         </div>
       </Container>
