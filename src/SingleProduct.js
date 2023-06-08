@@ -5,7 +5,7 @@ import { useProductContext } from './context/productcontext';
 import PageNavigation from './components/PageNavigation';
 import MyImage from './components/MyImage';
 import { Container } from './styles/Container';
-import FormatePrice from './Helpers/FormatePrice';
+import FormatPrice from './Helpers/FormatePrice';
 import { MdSecurity } from 'react-icons/md';
 import { TbTruckDelivery, TbReplace } from 'react-icons/tb';
 import Star from './components/Star';
@@ -20,12 +20,11 @@ const SingleProduct = () => {
   const { id } = useParams();
 
   const {
-    id: alias,
-    name,
+    id: name,
     company,
     price,
     description,
-    category,
+
     stock,
     stars,
     reviews,
@@ -54,18 +53,17 @@ const SingleProduct = () => {
           <div className="product-data">
             <h2>{name}</h2>
             <Star stars={stars} reviews={reviews} />
-            <p>{reviews} reviews</p>
+
             <p className="product-data-price">
               MRP:
               <del>
-                <FormatePrice price={price + 250000} />
+                <FormatPrice price={price + 250000} />
               </del>
             </p>
             <p className="product-data-price product-data-real-price">
-              Deal of the Day: <FormatePrice price={price} />
+              Deal of the Day: <FormatPrice price={price} />
             </p>
             <p>{description}</p>
-            {/* <p>{category} </p> */}
             <div className="product-data-warranty">
               <div className="product-warranty-data">
                 <TbTruckDelivery className="warranty-icon" />

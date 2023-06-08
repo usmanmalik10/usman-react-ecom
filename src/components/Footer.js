@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import { Button } from "../styles/Button";
-import { FaDiscord, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import { Button } from '../styles/Button';
+import { FaDiscord, FaInstagram, FaLinkedin } from 'react-icons/fa';
 const Footer = () => {
   return (
     <Wrapper>
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
           <div className="footer-contact">
             <h3>Call Us</h3>
-            <h3> +92 341 4498234 </h3>
+            <h3> +92 316 4244508 </h3>
           </div>
         </div>
 
@@ -60,10 +60,12 @@ const Footer = () => {
         <div className="footer-bottom--section">
           <hr />
           <div className="container grid grid-two-column">
-            <p>CopyRights @{new Date().getFullYear()} FABAU STORE. All Rights Reserved</p>
+            <p>
+              CopyRights @{new Date().getFullYear()} FABAU STORE. All Rights
+              Reserved
+            </p>
             <div>
               <p>PRIVACY POLICY TERMS & CONDITIONS </p>
-              
             </div>
           </div>
         </div>
