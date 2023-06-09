@@ -41,7 +41,7 @@ const SingleProduct = () => {
 
   return (
     <Wrapper>
-      <PageNavigation title={name} />
+      <PageNavigation title="fabauproduct" />
       <Container className="container">
         <div className="grid grid-two-column">
           {/* product Images  */}
@@ -51,7 +51,7 @@ const SingleProduct = () => {
 
           {/* product dAta  */}
           <div className="product-data">
-            <h2>{name}</h2>
+            <h2>FABAU PRODUCT</h2>
             <Star stars={stars} reviews={reviews} />
 
             <p className="product-data-price">
@@ -92,7 +92,7 @@ const SingleProduct = () => {
                 <span> {stock > 0 ? 'In Stock' : 'Not Available'}</span>
               </p>
               <p>
-                ID : <span> {id} </span>
+                ID : <span> product </span>
               </p>
               <p>
                 Brand :<span> {company} </span>
